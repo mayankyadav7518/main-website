@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+*{
+  font-family: 'Poppins';
+}
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+  ::-webkit-scrollbar-button {
+    display: none;
+  }
+  
+* {
+    /* Add this CSS in your global CSS file */
+::selection {
+    background-color: #10b981; /* Green */
+    color: white; /* White text */
+  }
+  
+}

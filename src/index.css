@@ -28,7 +28,7 @@
 * {
     /* Add this CSS in your global CSS file */
 ::selection {
-    background-color: #10b981; /* Green */
+    background-color: #1bad3f; /* Green */
     color: white; /* White text */
   }
   

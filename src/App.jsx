@@ -2,13 +2,13 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import UserAuth from './components/authentication/UserAuth';
-import Navbar from './components/navbar/Navbar';
+// import Navbar from './components/navbar/Navbar';
 import HomePage from './components/home/HomePage';
 import AboutUs from './components/about/AboutUs';
 import Services from './components/services/Services';
 import ProductsPage from './components/products/Products';
 import ContactUs from './components/contact/ContactUs';
-// import Footer from './components/footer/Footer';
+import Footer from './components/footer/Footer';
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -41,7 +41,7 @@ const App = () => {
     <Router>
       {isAuthenticated ? (
         <>
-          <Navbar />
+          {/* <Navbar /> */}
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutUs />} />
@@ -49,11 +49,11 @@ const App = () => {
             <Route path="/products" element={<ProductsPage />} />
             <Route path="/contact" element={<ContactUs />} />
           </Routes>
-          {/* <Footer /> */}
+          <Footer />
         </>
       ) : (
         <>
-          <Navbar />
+          {/* <Navbar /> */}
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutUs />} />
@@ -62,7 +62,7 @@ const App = () => {
             <Route path="/contact" element={<ContactUs />} />
           </Routes>
           {showUserAuth && <UserAuth onClose={handleCloseUserAuth} onLogin={handleLogin} />}
-          {/* <Footer /> */}
+          <Footer />
         </>
       )}
     </Router>

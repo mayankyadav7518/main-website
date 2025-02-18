@@ -1,4 +1,5 @@
 import { FaFacebook, FaInstagram, FaTwitter, FaGithub, FaDribbble, FaLinkedin, FaPaperPlane, FaPinterest } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -8,11 +9,10 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-3">Product</h3>
             <ul className="space-y-2 text-sm">
-              <li>Landing Page</li>
-              <li>Popup Builder</li>
-              <li>Web-design</li>
-              <li>Content</li>
-              <li>Integrations</li>
+              <li>Hospital Management System</li>
+              <li>User Management System</li>
+              <li>E-Commerce Website</li>
+              <li>AI Chatbot</li>
             </ul>
           </div>
           <div>
@@ -27,7 +27,6 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-3">Resources</h3>
             <ul className="space-y-2 text-sm">
-              <li>Academy</li>
               <li>Blog</li>
               <li>Themes</li>
               <li>Hosting</li>
@@ -47,8 +46,8 @@ export default function Footer() {
           </div>
           <div>
             <h3 className="font-semibold text-lg mb-3">Contact Us</h3>
-            <p className="text-sm">Wisconsin Ave, Suite 700<br/>Chevy Chase, Maryland 20815</p>
-            <p className="text-sm mt-2">support@figma.com</p>
+            <p className="text-sm">Gorakhpur, Uttar Pradesh<br/>India, 273001</p>
+            <p className="text-sm mt-2">mayank7518@gmail.com</p>
           </div>
         </div>
 
@@ -58,12 +57,9 @@ export default function Footer() {
             <FaInstagram className="text-xl cursor-pointer" />
             <FaTwitter className="text-xl cursor-pointer" />
             <FaGithub className="text-xl cursor-pointer" />
-            <FaDribbble className="text-xl cursor-pointer" />
             <FaLinkedin className="text-xl cursor-pointer" />
-            <FaPaperPlane className="text-xl cursor-pointer" />
-            <FaPinterest className="text-xl cursor-pointer" />
           </div>
-          <p className="text-xs text-gray-500 mt-4">© 2021 All Rights Reserved</p>
+          <p className="text-xs text-gray-500 mt-4">© 2025 All Rights Reserved</p>
           <div className="flex space-x-4 text-xs text-gray-500 mt-2">
             <span>Privacy Policy</span>
             <span>Terms of Use</span>

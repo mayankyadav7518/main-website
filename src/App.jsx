@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import UserAuth from './components/authentication/UserAuth';
-// import Navbar from './components/navbar/Navbar';
+import Navbar from './components/navbar/Navbar';
 import HomePage from './components/home/HomePage';
 import AboutUs from './components/about/AboutUs';
 import Services from './components/services/Services';
@@ -41,7 +41,7 @@ const App = () => {
     <Router>
       {isAuthenticated ? (
         <>
-          {/* <Navbar /> */}
+          <Navbar />
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutUs />} />
@@ -53,7 +53,7 @@ const App = () => {
         </>
       ) : (
         <>
-          {/* <Navbar /> */}
+          <Navbar />
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutUs />} />

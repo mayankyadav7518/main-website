@@ -49,7 +49,7 @@ const TestimonialCard = ({ name, role, image, rating, feedback }) => {
 
 const Testimonials = () => {
   return (
-    <div className="bg-gray-800 py-10 px-6 md:px-20 mt-10 mb-10">
+    <div className="bg-gray-800 py-10 px-6 md:px-20">
       <h2 className="text-white text-2xl font-bold text-center mb-8">What Our Clients Say</h2>
       <div className="grid md:grid-cols-3 gap-6">
         {testimonials.map((testimonial, index) => (

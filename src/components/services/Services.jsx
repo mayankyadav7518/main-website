@@ -8,7 +8,7 @@ import {
   FaBullhorn,
   FaArrowUp,
   FaPenNib,
-  FaCloud,
+  FaVideo,
 } from "react-icons/fa"; // Importing icons
 import { GoGraph } from "react-icons/go";
 
@@ -35,22 +35,22 @@ const ServicesPage = () => {
         </p>
       </section> */}
 
-      <section className="text-center py-20 px-6 bg-gray-100">
-        <h1 className="text-3xl font-semibold text-green-800 mb-4">Our Services</h1>
-        <p className="text-md text-green-600 mb-6 max-w-3xl mx-auto">
+      <section className="text-center py-20 px-6 bg-indigo-50">
+        <h1 className="text-3xl font-semibold text-blue-900 mb-4">Our Services</h1>
+        <p className="text-md text-blue-900 mb-6 max-w-3xl mx-auto">
         We offer a wide range of services tailored to meet your needs. Explore
         our offerings below:
         </p>
       </section>
 
       {/* Services Cards Section */}
-      <section className="py-16 px-6">
+      <section className="px-6 bg-indigo-50">
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Service 1: Web Development */}
           <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all ease-in-out duration-300 transform hover:scale-105">
             <FaDesktop className="mx-auto text-4xl text-blue-500 mb-6" />
             <h3 className="text-2xl font-semibold text-gray-800 mb-4 text-center">
-              Web Development
+              Web Apps
             </h3>{" "}
             <hr className="text-gray-300" />
             <p className="text-gray-600 text-sm text-center mt-3">
@@ -113,25 +113,24 @@ const ServicesPage = () => {
 
           {/* Service 6: Cloud Services */}
           <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all ease-in-out duration-300 transform hover:scale-105">
-            <FaCloud className="mx-auto text-4xl text-gray-600 mb-6" />
+            <FaVideo className="mx-auto text-4xl text-gray-600 mb-6" />
             <h3 className="text-2xl font-semibold text-gray-800 mb-4 text-center">
-              Cloud Services
+              Video Editing
             </h3>{" "}
             <hr className="text-gray-300" />
             <p className="text-gray-600 text-sm text-center mt-3">
-              Seamlessly manage your data in the cloud with our cutting-edge
-              cloud solutions.
+              Providing best video editing services at your doorstep 
             </p>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gray-100 py-16 px-6 text-center">
-        <h2 className="text-2xl font-semibold text-green-800 mb-4">
+      <section className="bg-indigo-50 py-16 px-6 text-center">
+        <h2 className="text-2xl font-semibold text-blue-900 mb-4">
           Ready to Take Your Business to the Next Level?
         </h2>
-        <p className="text-md text-green-600 mb-10 max-w-2xl mx-auto">
+        <p className="text-md text-blue-900 mb-10 max-w-2xl mx-auto">
           Our team is here to help you build, grow, and optimize your business.
           Let's start a conversation.
         </p>

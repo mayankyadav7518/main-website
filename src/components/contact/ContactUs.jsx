@@ -63,28 +63,21 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="mt-6">
+    <div className="mt-6 bg-indigo-50">
       <motion.div
         style={{ scaleX: scrollYProgress }}
         className="bg-green-600 origin-left w-full h-2 top-0 fixed z-50"
       >
         {" "}
       </motion.div>
-      {/* <h1 className="text-3xl font-bold text-center mt-20 text-green-800">
-        Contact Us
-      </h1>
-      <h2 className="text-center mt-6 text-md text-green-600">
-        Any questions or remarks? Just write us a message..!
-      </h2> */}
-
-     <section className="text-center py-20 px-6 bg-gray-100">
-        <h1 className="text-3xl font-semibold text-green-800 mb-4">Contact Us</h1>
-        <p className="text-md text-green-600 mb-6 max-w-3xl mx-auto">
+     <section className="text-center py-20 px-6">
+        <h1 className="text-3xl font-semibold text-blue-900 mb-4">Contact Us</h1>
+        <p className="text-md text-blue-900 mb-6 max-w-3xl mx-auto">
         Any questions or remarks? Just write us a message..!
         </p>
       </section>
 
-      <div className="grid grid-cols- md:grid-cols-2 gap-12 items-center container mx-auto px-2 py-2 mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center container mx-auto px-2">
         <div className="flex flex-col gap-10 pt-6 md:gap-14 shadow-lg rounded-lg md:p-8 bg-gradient-to-b from-gray-800 to-gray-700 h-[70vh] max-w-md md:max-w-lg lg:max-w-2xl mx-auto">
           <h1 className="text-white text-xl md:text-2xl text-center font-semibold">
             Contact Information
@@ -213,10 +206,10 @@ const ContactUs = () => {
       </div>
 
       {/* Google Map Embed */}
-      <h1 className="text-center text-2xl font-semibold mt-10 text-green-800">
+      <h1 className="text-center text-2xl font-semibold mt-10 text-blue-900">
         Find us here...
       </h1>
-      <div className="w-[100%] h-[50vh] mt-2 mb-10 p-4">
+      <div className="w-[100%] h-[60vh] mt-2 py-10 px-6">
         <iframe
           className="w-full h-full rounded-lg shadow-md"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3562.0635635700256!2d83.37087017499818!3d26.76213497677967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399144c39aa24411%3A0x80466b579ee90b3a!2sGorakhpur%2C%20Uttar%20Pradesh%20273209!5e0!3m2!1sen!2sin!4v1717693232893"

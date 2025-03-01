@@ -189,7 +189,7 @@ const Navbar = () => {
   const handleLinkClick = () => setIsMenuOpen(false);
 
   return (
-    <nav className="flex justify-between items-center py-4 px-6 bg-white fixed top-0 left-0 w-full z-50">
+    <nav className="flex justify-between items-center py-4 px-6 bg-gray-900 fixed top-0 left-0 w-full z-50">
       {/* Logo */}
       <div className="text-xl font-semibold text-green-500">Nexcents</div>
 
@@ -218,7 +218,7 @@ const Navbar = () => {
               to={path}
               onClick={handleLinkClick}
               className={`hover:text-gray-400 transition-all ${
-                location.pathname === path ? "text-green-500 font-bold" : "text-gray-700"
+                location.pathname === path ? "text-green-500 font-bold" : "text-white"
               }`}
             >
               {labels[index]}

@@ -2,42 +2,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion, useScroll } from "motion/react";
+import opd from "../../images/opd.png";
+import uppedicon from "../../images/uppedicon.png";
+import starwell from "../../images/starwell.png";
 
 // Product Data
 const products = [
   {
     id: 1,
-    name: "DCS",
+    name: "OPD Management System",
     description: "A complete solution for health monitoring with appointment booking and online consultation facilities.",
-    image: "https://source.unsplash.com/400x300/?technology,consulting",
+    image: opd,
     link: "#",
   },
   {
     id: 2,
-    name: "Temperature Converter",
-    description: "A temperature converter that allows you to convert various temperature forms.",
-    image: "https://source.unsplash.com/400x300/?temperature,tech",
-    link: "#",
-  },
-  {
-    id: 3,
-    name: "Smart Home Automation",
-    description: "Control your home appliances remotely using AI-powered automation.",
-    image: "https://source.unsplash.com/400x300/?smart-home,technology",
+    name: "UPPEDICON",
+    description: "A user management system that manages the members and users of Association of Paediatrician.",
+    image: uppedicon,
     link: "#",
   },
   {
     id: 4,
-    name: "AI Chatbot",
-    description: "Automate customer support with an intelligent AI-powered chatbot.",
-    image: "https://source.unsplash.com/400x300/?robot,chatbot",
-    link: "#",
-  },
-  {
-    id: 5,
-    name: "Cloud Storage Solutions",
-    description: "Secure, scalable, and fast cloud storage for your data needs.",
-    image: "https://source.unsplash.com/400x300/?cloud,server",
+    name: "Starwell Foundation",
+    description: "A website that manages admission of students of schools and colleges across the country.",
+    image: starwell,
     link: "#",
   },
   {
@@ -54,7 +43,7 @@ const ProductsPage = () => {
   const { scrollYProgress } = useScroll();
 
   return (
-    <div className="bg-gray-50 mt-6">
+    <div className="bg-indigo-50 mt-6">
       <motion.div
         style={{ scaleX: scrollYProgress }}
         className="bg-green-600 origin-left w-full h-2 top-0 fixed z-50"
@@ -63,15 +52,15 @@ const ProductsPage = () => {
       </motion.div>
 
       {/* 🌟 Hero Section */}
-      <section className="text-center py-20 px-6 bg-gray-100">
-        <h1 className="text-3xl font-semibold text-green-800 mb-4">Our Products</h1>
-        <p className="text-md text-green-600 mb-6 max-w-3xl mx-auto">
+      <section className="text-center py-20 px-6 bg-indigo-50">
+        <h1 className="text-3xl font-semibold text-blue-900 mb-4">Our Products</h1>
+        <p className="text-md text-blue-900 max-w-3xl mx-auto">
           Explore our latest innovations, designed to revolutionize the digital experience.
         </p>
       </section>
 
       {/* 🔥 Products Grid Section */}
-      <section className="py-16 px-6">
+      <section className="px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           
           {products.map((product) => (
@@ -100,9 +89,9 @@ const ProductsPage = () => {
       </section>
 
       {/* 🚀 Call to Action (CTA) */}
-      <section className="bg-gray-100 py-16 px-6 text-center">
-        <h2 className="text-2xl text-green-800 font-semibold mb-4">Want to See More?</h2>
-        <p className="text-md text-green-600 mb-10 max-w-2xl mx-auto">
+      <section className="bg-indigo-50 py-16 px-6 text-center">
+        <h2 className="text-2xl text-blue-900 font-semibold mb-4">Want to See More?</h2>
+        <p className="text-md text-blue-900 mb-10 max-w-2xl mx-auto">
           Explore our full catalog and discover the perfect products for you.
         </p>
         <Link to="/contact"

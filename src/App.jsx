@@ -8,7 +8,7 @@ import AboutUs from './components/about/AboutUs';
 import Services from './components/services/Services';
 import ProductsPage from './components/products/Products';
 import ContactUs from './components/contact/ContactUs';
-// import Footer from './components/footer/Footer';
+import Footer from './components/footer/Footer';
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -49,7 +49,7 @@ const App = () => {
             <Route path="/products" element={<ProductsPage />} />
             <Route path="/contact" element={<ContactUs />} />
           </Routes>
-          {/* <Footer /> */}
+          <Footer />
         </>
       ) : (
         <>
@@ -62,7 +62,7 @@ const App = () => {
             <Route path="/contact" element={<ContactUs />} />
           </Routes>
           {showUserAuth && <UserAuth onClose={handleCloseUserAuth} onLogin={handleLogin} />}
-          {/* <Footer /> */}
+          <Footer />
         </>
       )}
     </Router>

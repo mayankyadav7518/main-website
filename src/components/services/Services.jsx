@@ -1,14 +1,13 @@
-// src/ServicesPage.jsx
+
 import React from "react";
 import { Link } from "react-router-dom";
 import {
   FaDesktop,
   FaTools,
   FaBullhorn,
-  FaArrowUp,
   FaPenNib,
   FaVideo,
-} from "react-icons/fa"; // Importing icons
+} from "react-icons/fa"; 
 import { GoGraph } from "react-icons/go";
 import ScrollProgress from "../ScrollProgress";
 

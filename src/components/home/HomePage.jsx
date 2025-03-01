@@ -971,9 +971,9 @@ import uppedicon from "../../images/uppedicon.png";
 import starwell from "../../images/starwell.png";
 import Testimonials from "../testimonial/Testimonial";
 import "../../css/HomePage.css";
+import ScrollProgress from "../ScrollProgress";
 
 const HomePage = () => {
-  const { scrollYProgress } = useScroll();
 
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -985,38 +985,26 @@ const HomePage = () => {
     {
       name: "Mayank Yadav",
       designation: "Web Developer",
-      // skills: [
-      //   { name: "React.js" },
-      //   { name: "Node.js" },
-      //   { name: "JavaScript" },
-      //   { name: "Material UI" },
-      // ],
-      // salary: "$90,000",
       imageUrl: google,
     },
     {
       name: "Shikha Arya",
       designation: "Web Developer",
-      // skills: [{ name: "Strategic Planning" }, { name: "Digital Marketing" }],
-      // salary: "$120,000",
       imageUrl: google,
     },
     {
       name: "Anushka Yadav",
       designation: "Web Developer/HR",
-      // skills: [{ name: "Ads Management" }, { name: "Campaign Strategies" }],
-      // salary: "$130,000",
       imageUrl: google,
     },
     {
       name: "Aman Nishad",
       designation: "Content Writer/Video Editor",
-      // skills: [
-      //   { name: "SEO" },
-      //   { name: "Content Marketing" },
-      //   { name: "Growth Hacking" },
-      // ],
-      // salary: "$100,000",
+      imageUrl: google,
+    },
+    {
+      name: "Arpita Pandey",
+      designation: "Web Developer/SEO Expert",
       imageUrl: google,
     },
   ];
@@ -1047,12 +1035,7 @@ const HomePage = () => {
   return (
     <div className="mt-10">
       {/* Hero Section */}
-      <motion.div
-        style={{ scaleX: scrollYProgress }}
-        className="bg-green-600 origin-left w-full h-2 top-0 fixed z-50"
-      >
-        {" "}
-      </motion.div>
+      <ScrollProgress />
       <section id="main-section" className="relative">
         <div className="flex justify-center items-center min-h-screen bg-indigo-50">
           <div className="heading text-center space-y-6">
@@ -1085,10 +1068,10 @@ const HomePage = () => {
         <h2 className="text-2xl font-semibold text-blue-900 mb-12">
           Our Team Members
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
           {teamMembers.map((member, index) => (
             <div key={index} className="group ">
-              <div className="relative bg-white w-full h-80 rounded-xl shadow-lg hover:transition-all ease-in-out duration-300 transform hover:scale-105">
+              <div className="relative bg-white w-full h-96 rounded-xl shadow-lg hover:transition-all ease-in-out duration-300 transform hover:scale-105">
                 <div className="bg-gradient-to-r from-pink-400 via-red-500 to-yellow-500 rounded-full inline-block p-1 mt-8">
                   <img
                     src={member.imageUrl}
@@ -1102,7 +1085,7 @@ const HomePage = () => {
                   </h3>
                   <p className="text-gray-600 text-sm">{member.designation}</p>
                 </div>
-                <div className="flex justify-center gap-4 pt-4">
+                <div className="flex justify-center gap-4 pt-14">
                   <FaLinkedin className="text-xl text-blue-900 cursor-pointer" />
                   <FaFacebook className="text-xl text-blue-700 cursor-pointer" />
                   <FaGithub className="text-xl cursor-pointer" />
@@ -1122,7 +1105,7 @@ const HomePage = () => {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12 place-items-center">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-16 mt-12 place-items-center">
         {/* Card 1 */}
         <div className="bg-white w-72 h-80 p-6 shadow-lg rounded-xl text-center transition-transform transform hover:scale-105 hover:shadow-2xl">
           <div className="flex justify-center items-center mt-6 mb-6 w-16 h-16 bg-blue-100 text-blue-600 rounded-full mx-auto">
@@ -1172,7 +1155,7 @@ const HomePage = () => {
 
       {/* Services Section */}
  
-<section className="px-6 bg-indigo-50 text-center">
+<section className="px-6 bg-indigo-50 text-center pb-10">
 <h2 className="text-2xl font-semibold text-blue-900 mb-4">
             Our Services
           </h2>
@@ -1180,7 +1163,7 @@ const HomePage = () => {
             Offering the best solutions for your business with industry-leading
             services
           </p>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-14">
           {/* Service 1: Web Development */}
           <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all ease-in-out duration-300 transform hover:scale-105">
             <FaDesktop className="mx-auto text-4xl text-blue-500 mb-6" />
@@ -1237,7 +1220,7 @@ const HomePage = () => {
 
 
       {/* Portfolio Section */}
-      <section className="py-16 bg-indigo-50 p-2">
+      {/* <section className="py-16 bg-indigo-50 p-2">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-2xl font-semibold text-blue-900 mb-6">
             Our Work
@@ -1295,7 +1278,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonials Section */}
       <Testimonials />

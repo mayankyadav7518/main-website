@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { motion, useScroll } from "motion/react";
-import google from "../../images/google.png";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { IoMail } from "react-icons/io5";
 import {
@@ -10,9 +8,9 @@ import {
   FaYoutube,
 } from "react-icons/fa6";
 import { BsInstagram } from "react-icons/bs";
+import ScrollProgress from "../ScrollProgress";
 
 const ContactUs = () => {
-  const { scrollYProgress } = useScroll();
 
   const [formData, setFormData] = useState({
     name: "",
@@ -64,12 +62,7 @@ const ContactUs = () => {
 
   return (
     <div className="mt-6 bg-indigo-50">
-      <motion.div
-        style={{ scaleX: scrollYProgress }}
-        className="bg-green-600 origin-left w-full h-2 top-0 fixed z-50"
-      >
-        {" "}
-      </motion.div>
+      <ScrollProgress />
      <section className="text-center py-20 px-6">
         <h1 className="text-3xl font-semibold text-blue-900 mb-4">Contact Us</h1>
         <p className="text-md text-blue-900 mb-6 max-w-3xl mx-auto">

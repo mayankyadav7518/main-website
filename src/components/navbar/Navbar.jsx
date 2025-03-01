@@ -210,8 +210,8 @@ const Navbar = () => {
 
       {/* Menu for Desktop */}
       <div className="hidden md:flex space-x-6 items-center">
-        {["/", "/about", "/services","/products" , "/contact"].map((path, index) => {
-          const labels = ["Home", "About", "Services", "Our Products", "Contact"];
+        {["/", "/about", "/services", "/blogs", "/contact"].map((path, index) => {
+          const labels = ["Home", "About", "Services", "Blogs", "Contact"];
           return (
             <Link
               key={path}
@@ -229,8 +229,8 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <ul className={`${isMenuOpen ? "flex-col" : "hidden"} flex md:hidden absolute top-16 left-0 w-full bg-white shadow-lg`}>
-        {["/", "/about", "/services", "/products", "/contact"].map((path, index) => {
-          const labels = ["Home", "About", "Services", "Our Products", "Contact"];
+        {["/", "/about", "/services", "blogs", "/contact"].map((path, index) => {
+          const labels = ["Home", "About", "Services", "Blogs", "Contact"];
           return (
             <li key={path}>
               <Link

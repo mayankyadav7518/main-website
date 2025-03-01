@@ -1,21 +1,15 @@
 // src/AboutUs.jsx
 import React from "react";
 import { Link } from "react-router-dom";
-import { motion, useScroll } from "motion/react";
+
 import Testimonials from "../testimonial/Testimonial";
+import ScrollProgress from "../ScrollProgress";
 
 const AboutUs = () => {
-  const { scrollYProgress } = useScroll();
 
   return (
     <section className="bg-gray-5 mt-6">
-      <motion.div
-        style={{ scaleX: scrollYProgress }}
-        className="bg-green-600 origin-left w-full h-2 top-0 fixed z-50"
-      >
-        {" "}
-      </motion.div>
-
+      <ScrollProgress />
       <section className="text-center py-20 px-6 bg-indigo-50">
         <h1 className="text-3xl font-semibold text-blue-900 mb-4">About Us</h1>
         <p className="text-md text-blue-900 mb-6 max-w-3xl mx-auto">

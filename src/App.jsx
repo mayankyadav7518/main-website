@@ -6,7 +6,8 @@ import Navbar from './components/navbar/Navbar';
 import HomePage from './components/home/HomePage';
 import AboutUs from './components/about/AboutUs';
 import Services from './components/services/Services';
-import ProductsPage from './components/products/Products';
+import Blogs from "./components/blogs/Blogs"
+// import ProductsPage from './components/products/Products';
 import ContactUs from './components/contact/ContactUs';
 import Footer from './components/footer/Footer';
 
@@ -46,7 +47,7 @@ const App = () => {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/products" element={<ProductsPage />} />
+            <Route path="/blogs" element={<Blogs />} />
             <Route path="/contact" element={<ContactUs />} />
           </Routes>
           <Footer />
@@ -58,7 +59,7 @@ const App = () => {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/products" element={<ProductsPage />} />
+            <Route path="/blogs" element={<Blogs />} />
             <Route path="/contact" element={<ContactUs />} />
           </Routes>
           {showUserAuth && <UserAuth onClose={handleCloseUserAuth} onLogin={handleLogin} />}
